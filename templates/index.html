@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>covid</title>
+  </head>
+<body>
+
+<style>
+
+    html body {
+      background-color: rgb(206, 206, 228);
+
+      
+  }
+
+  
+</style>
+
+<!--Form Section-->
+<br /><br />
+<h2 style="text-align: center; margin: 0px; color: black">
+  <b>COVID CONTACT TRACING</b>
+</h2>
+<br />
+
+<div
+  style="
+    width: 350px;
+    height: 50rem;
+    margin: 0px auto;
+    color: black;
+    border-radius: 25px;
+    padding: 10px 10px;
+  "
+>
+  <form method="POST" action="{{ url_for('predict') }}">
+    <div class="form-group">
+      <label for="Name" style="font-size: 17px"><b>Name:</b></label>
+      <input
+        type="text"
+        class="form-control"
+        id="Name"
+        name="name"
+        placeholder="Enter the Name"
+        style="font-weight: bold"
+        required
+      />
+    </div><br>
+    
+    
+
+    <div class="d-flex justify-content-center">
+      <button
+        type="submit"
+        class="btn btn-info"
+        style="color: black; font-weight: bold; width: 130px; height:50px; border-radius:12px; font-size: 21px;"
+      >
+        Find
+      </button>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
+
